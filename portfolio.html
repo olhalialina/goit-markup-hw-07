@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PORTFOLIO</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="website creator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header section-->
+    <header class="header">
+      <div class="container header--container">
+        <nav class="nav">
+          <a
+            class="nav__logo"
+            href="https://luci1iel.github.io/goit-markup-hw-07/"
+            ><span class="nav__logo-span">WEB</span>STUDIO</a
+          >
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a
+                class="nav__link"
+                href="https://luci1iel.github.io/goit-markup-hw-07/"
+                >Studio</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link active" href="./portfolio">Portfolio</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="https://luci1iel.github.io/goit-markup-hw-07/">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__list-item">
+              <a class="address__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address__list-item">
+              <a class="address__link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button class="mobile-button js-open-menu" 
+          aria-expanded="false" 
+          aria-controls="mobile__nav">
+          <svg class="mobile-button__icon">
+            <use href="./images/icons.svg#hamburger-menu-icon"/>
+          </svg>
+        </button>
+        <!-- mobile nav -->
+        <nav class="mobile js-menu-container">
+          <button class="mobile__button-close js-close-menu">
+            <svg class="mobile__button-icon">
+              <use href="./images/icons.svg#icon-close"/>
+            </svg>
+          </button>
+          <ul class="mobile__nav">
+            <li class="mobile__nav-item">
+              <a
+                class="mobile__nav-link"
+                href="https://luci1iel.github.io/goit-markup-hw-07/"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile__nav-item">
+              <a class="mobile__nav-link active" href="./portfolio">Portfolio</a>
+            </li>
+            <li class="mobile__nav-item">
+              <a class="mobile__nav-link" href="https://luci1iel.github.io/goit-markup-hw-07/">Contacts</a>
+            </li>
+          </ul>
+          <div class="mobile__bottom-menu">
+            <ul class="mobile__address">
+              <li class="mobile__address-item">
+                <a class="mobile__address-tel" href="tel:110001111111">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+              <li class="mobile__address-item">
+                <a class="mobile__address-email" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-socmed">
+              <li class="mobile-socmed__item">
+                <a
+                  class="mobile-socmed__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="mobile-socmed__icon">
+                    <use href="./images/icons.svg#icon-instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-socmed__item">
+                <a
+                  class="mobile-socmed__link"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                >
+                  <svg class="mobile-socmed__icon">
+                    <use href="./images/icons.svg#icon-twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-socmed__item">
+                <a
+                  class="mobile-socmed__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="mobile-socmed__icon">
+                    <use href="./images/icons.svg#icon-facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-socmed__item">
+                <a
+                  class="mobile-socmed__link"
+                  href="https://www.linkein.com/"
+                  target="_blank"
+                >
+                  <svg class="mobile-socmed__icon">
+                    <use href="./images/icons.svg#icon-linkedin" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <!-- filter section -->
+      <section class="filter">
+        <div class="container filter--container">
+          <h2 hidden></h2>
+          <ul class="filter__list">
+            <li class="filter__list-item">
+              <button class="filter__button">All</button>
+            </li>
+            <li class="filter__list-item">
+              <button class="filter__button">Web Site</button>
+            </li>
+            <li class="filter__list-item">
+              <button class="filter__button">App</button>
+            </li>
+            <li class="filter__list-item">
+              <button class="filter__button">Design</button>
+            </li>
+            <li class="filter__list-item">
+              <button class="filter__button">Marketing</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- portfolios section -->
+      <section class="portfolio">
+        <div class="container portfolio--container">
+          <ul class="portfolio__list">
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-01.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Banking app Interface Concept
+                </h3>
+                <p class="portfolio__item-description">App</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-02.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Cashless Payment
+                </h3>
+                <p class="portfolio__item-description">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-03.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Meditation App
+                </h3>
+                <p class="portfolio__item-description">App</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-04.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Taxi Service
+                </h3>
+                <p class="portfolio__item-description">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-05.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Screen Illustrations
+                </h3>
+                <p class="portfolio__item-description">Design</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-06.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Online Courses
+                </h3>
+                <p class="portfolio__item-description">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-07.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Instagram Stories Concept
+                </h3>
+                <p class="portfolio__item-description">Design</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-08.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Organic Food
+                </h3>
+                <p class="portfolio__item-description">Web Site</p>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <figure class="portfolio__figure">
+                <img
+                  class="figure__image"
+                  src="images/project-card-09.jpg"
+                  alt="Banking app Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <figcaption class="figure__caption">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </figcaption>
+              </figure>
+              <div class="portfolio-item__content">
+                <h3 class="portfolio-item__heading">
+                  Fresh Coffee
+                </h3>
+                <p class="portfolio__item-description">Web Site</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="section footer">
+      <div class="container footer--container">
+        <div class="footer__logo">
+          <a
+            class="footer__logo-link"
+            href="https://luci1iel.github.io/goit-markup-hw-07/"
+            ><span class="footer__logo-span">WEB</span>STUDIO</a
+          >
+          <small class="footer__description">
+            Increase the flow of customers and <br />
+            sales for your business with digital <br />
+            marketing & growth solutions.
+          </small>
+        </div>
+        <div class="footer__socmed">
+          <h3 class="footer__socmed-heading">Social media</h3>
+          <ul class="footer__socmed-list">
+            <li class="footer__socmed-item">
+              <a
+                class="footer__socmed-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="footer__socmed-icon">
+                  <use href="./images/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socmed-item">
+              <a
+                class="footer__socmed-link"
+                href="https://www.twitter.com/"
+                target="_blank"
+              >
+                <svg class="footer__socmed-icon">
+                  <use href="./images/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socmed-item">
+              <a
+                class="footer__socmed-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="footer__socmed-icon">
+                  <use href="./images/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socmed-item">
+              <a
+                class="footer__socmed-link"
+                href="https://www.linkein.com/"
+                target="_blank"
+              >
+                <svg class="footer__socmed-icon">
+                  <use href="./images/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subs">
+          <form class="footer__subs-content">
+            <label class="footer__subs-label">
+              <span class="footer__subs-heading">Subscribe</span>
+              <input
+                class="footer__subs-input"
+                type="email"
+                name="e-mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer__subs-button" type="submit">
+              Subscribe
+              <svg class="footer__subs-icon">
+                <use href="./images/icons.svg#icon-send" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
